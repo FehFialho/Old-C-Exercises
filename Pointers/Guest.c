@@ -22,8 +22,8 @@ int main() {
     fgets(name, sizeof(name), stdin);
 
     fprintf(guestList, "%d - %s", code, name);
-
     fclose(guestList);
 
+    printf("Check your folder!");
     return 0;
 }

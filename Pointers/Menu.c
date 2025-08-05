@@ -24,5 +24,6 @@ int main() {
     }
     fprintf(menu, "==============================\n");
 
+    printf("Check your folder!");
     fclose(menu);
 }
