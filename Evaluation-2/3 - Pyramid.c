@@ -1,3 +1,26 @@
+/* Evaluation 2 - (04/22/2025)
+3) Pattern Drawing
+This program asks the user for a positive integer (size) and prints patterns using nested for loops:
+1) Right Triangle
+*
+**
+***
+****
+*****
+2) Inverted Right Triangle
+*****
+****
+***
+**
+*
+3) Pyramid (optional, bonus)
+    *
+   ***
+  *****
+ *******
+*********
+*/
+
 #include <stdio.h>
 
 int main(){

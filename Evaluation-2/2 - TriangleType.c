@@ -1,3 +1,17 @@
+/* Evaluation 2 - (04/22/2025)
+2) Create a C program that receives the lengths of the three sides of a triangle 
+and determines its type using if... else if... else conditions.
+
+The program:
+- Asks the user to enter three side lengths.
+- Classifies the triangle as:
+    • Equilateral: all three sides equal.
+    • Isosceles: exactly two sides equal.
+    • Scalene: all three sides different.
+    • Right triangle: validated using Pythagoras theorem (a² + b² = c²).
+- Handles invalid inputs (zero or negative lengths).
+- Declares Invalid if the given sides cannot form a triangle (sum of two sides ≤ third side).
+*/
 #include <stdio.h>
 
 int main(){

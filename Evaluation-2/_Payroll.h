@@ -1,5 +1,5 @@
-#ifndef _FERNANDAKLECHOWICZFIALHO__H
-#define _FERNANDAKLECHOWICZFIALHO__H
+#ifndef _PAYROLL_H
+#define _PAYROLL_H
 
 // Rates and values for calculation (simplified)
 #define INSS_RATE 0.11 // Fixed 11%
