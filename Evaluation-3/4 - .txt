@@ -1,0 +1,69 @@
+/***************************************************************
+ *         Exercise 4 - Sensor Monitoring System (C++)         *
+ ***************************************************************/
+
+/***************************************************************
+ * Objective:
+ * Structure sensor data using classes, apply getters and setters 
+ * to validate inputs and maintain data integrity, and simulate
+ * real-time data readings.
+ ***************************************************************/
+
+/***************************************************************
+ * Problem:
+ * You are tasked with creating a system to monitor data from 
+ * different types of sensors.
+ ***************************************************************/
+
+/***************************************************************
+ * Requirements:
+ * 1. Sensor Class:
+ *    - Data Members (all private):
+ *       - id (int)
+ *       - type (string)
+ *       - unit (string: "Celsius", "kPa")
+ *       - currentValue (double)
+ *       - minLimit (double)
+ *       - maxLimit (double)
+ *       - alertActive (bool)
+ *    - Public Methods (Getters and Setters with logic):
+ *       - getId(), getType(), getUnit(), getCurrentValue(), getMinLimit(), getMaxLimit()
+ *       - setType(string newType): set a new sensor type
+ *       - setUnit(string newUnit): set a new unit
+ *       - setLimits(double min, double max):
+ *           - set minLimit and maxLimit
+ *           - validate min <= max; else show error and do not change limits
+ *       - readValue(double value):
+ *           - set currentValue to the provided value
+ *           - check alert: if value is outside minLimit and maxLimit, set alertActive to true; else false
+ *       - displayStatus(): print ID, type, unit, current value, limits, and alert status
+ *
+ * 2. Main Function:
+ *    - Create 2 Sensor objects with different types and limits ("Temperature", "Pressure")
+ *    - Use setters to define limits for each sensor, testing valid and invalid cases
+ *    - Simulate readings for each sensor using readValue()
+ *    - Display each sensor's status using displayStatus() after each reading or significant change
+ *
+ * Test Values:
+ * 1. Temperature Sensor (Celsius)
+ *    - ID: 101
+ *    - Type: "Temperature"
+ *    - Unit: "Celsius"
+ *    - Initial Limits: min = 18.0, max = 25.0
+ *    - Test Readings:
+ *       - 22.5 (within limits - no alert)
+ *       - 15.0 (below min - alert)
+ *       - 28.0 (above max - alert)
+ *       - 20.0 (back to normal - no alert)
+ *
+ * 2. Pressure Sensor (kPa)
+ *    - ID: 202
+ *    - Type: "Pressure"
+ *    - Unit: "kPa"
+ *    - Initial Limits: min = 90.0, max = 110.0
+ *    - Test Readings:
+ *       - 100.5 (within limits - no alert)
+ *       - 85.0 (below min - alert)
+ *       - 115.0 (above max - alert)
+ *       - 98.0 (back to normal - no alert)
+ ***************************************************************/

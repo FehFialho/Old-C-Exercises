@@ -1,0 +1,75 @@
+/***************************************************************
+ *        Exercise 3 - Product Catalog with Promos (C++)       *
+ ***************************************************************/
+
+/***************************************************************
+ * Objective:
+ * Create classes with multiple interactions, protect data using
+ * private members, implement getters and setters with business
+ * logic, and create objects of the class.
+ ***************************************************************/
+
+/***************************************************************
+ * Problem:
+ * Develop a system to manage products in an online catalog,
+ * including the promotional pricing functionality.
+ ***************************************************************/
+
+/***************************************************************
+ * Requirements:
+ * 1. Product Class:
+ *    - Data Members (all private):
+ *       - id (int)
+ *       - name (string)
+ *       - basePrice (double)
+ *       - discountPercent (double, value between 0.0 and 1.0)
+ *       - onPromotion (bool)
+ *    - Public Methods (Getters and Setters with logic):
+ *       - getId(), getName(), getBasePrice(), getDiscountPercent(), getOnPromotion()
+ *       - setName(string newName): set a new name
+ *       - setBasePrice(double newPrice): validate newPrice > 0
+ *       - applyPromotion(double percent):
+ *           - set onPromotion to true
+ *           - set discountPercent to percent
+ *           - validate percent is between 0.0 and 1.0; else show error
+ *       - removePromotion():
+ *           - set onPromotion to false
+ *           - set discountPercent to 0.0
+ *       - getFinalPrice():
+ *           - return basePrice
+ *           - if onPromotion is true, return basePrice * (1 - discountPercent)
+ *       - displayProductInfo(): print all product info, including final price
+ *
+ * 2. Main Function:
+ *    - Create 2 Product objects
+ *    - Demonstrate using setters to change name and base price
+ *    - Apply promotions to some products and remove promotions from others, testing validations
+ *    - Use getFinalPrice() to show prices with and without discount
+ *    - Display all product information using displayProductInfo()
+ *
+ * Test Data:
+ * 1. Notebook Gamer Xtreme
+ *    - ID: 101
+ *    - Name: "Notebook Gamer Xtreme"
+ *    - Base Price: 5500.00
+ *    - Test Cases:
+ *       - Create the product
+ *       - Display info (no promotion)
+ *       - Apply 15% promotion (applyPromotion(0.15))
+ *       - Display info (should show discounted price)
+ *       - Apply invalid promotions (applyPromotion(1.2), applyPromotion(-0.1)) and check error
+ *       - Remove promotion and display info (back to base price)
+ *       - Change name to "Notebook Gamer Xtreme Pro" and base price to 5800.00
+ *
+ * 2. Smartphone UltraMax
+ *    - ID: 202
+ *    - Name: "Smartphone UltraMax"
+ *    - Base Price: 2800.00
+ *    - Test Cases:
+ *       - Create the product
+ *       - Display info (no promotion)
+ *       - Apply 20% promotion (applyPromotion(0.20))
+ *       - Display info (should show discounted price)
+ *       - Change base price to 2900.00 (check recalculated final price)
+ *       - Remove promotion
+ ***************************************************************/

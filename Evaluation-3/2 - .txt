@@ -1,0 +1,43 @@
+/***************************************************************
+             Exercise 2 - Inventory Management (C)
+ ***************************************************************/
+
+/***************************************************************
+ * Objective:
+ * Use structs for stock items, manipulate data in an array,
+ * apply conditional logic with if statements, and repeat
+ * operations using a do-while loop.
+ ***************************************************************/
+
+/***************************************************************
+ * Problem:
+ * Develop a system to manage the inventory of a small store.
+ ***************************************************************/
+
+/***************************************************************
+ * Requirements:
+ * 1. Define a struct named Product with the following fields:
+ *    - code (integer)
+ *    - name (char array of size 50)
+ *    - quantity (integer)
+ *    - price (float)
+ * 2. Create an array of Product to store information for up to 10 products.
+ * 3. Implement an interactive menu with the following options:
+ *    1. Add Product:
+ *       - Request a unique product code
+ *       - Request the name
+ *       - Request initial quantity (with validation)
+ *       - Request the price (with validation)
+ *       - Store the product in the array
+ *    2. Make a Sale:
+ *       - Request the code of the product to sell
+ *       - If the product exists:
+ *         - Request the quantity to sell (with validation)
+ *         - Update the product quantity in stock
+ *         - Display the total value of the sale
+ *       - If the product does not exist, show an error message
+ *    3. List Products:
+ *       - Display code, name, quantity, and price of all products
+ *       - If a product quantity is 0, display "OUT OF STOCK" next to the product name
+ *    4. Exit: End the program
+ ***************************************************************/

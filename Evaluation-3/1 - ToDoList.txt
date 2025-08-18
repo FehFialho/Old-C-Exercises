@@ -1,0 +1,46 @@
+/***************************************************************
+            Exercise 1 - Personal Task Management (C)
+ ***************************************************************/
+
+/***************************************************************
+ * Objective:
+ * Model tasks using structs, manipulate an array of tasks,
+ * use if statements for status and priority, and a do-while
+ * loop for menu repetition and input validation.
+ ***************************************************************/
+2
+/***************************************************************
+ * Problem:
+ * Create a C application to manage a personal to-do list.
+ ***************************************************************/
+
+/***************************************************************
+ * Requirements:
+ * 1. Define a struct named Task with the following fields:
+ *    - id (integer)
+ *    - description (char array of size 100)
+ *    - priority (integer: 1 = low, 2 = medium, 3 = high)
+ *    - completed (boolean: 0 = no, 1 = yes)
+ * 2. Create an array of Task to store up to 10 tasks.
+ * 3. Implement an interactive menu with the following:
+ *    1. Add Task:
+ *       - Generate a unique id for the task (incremental)
+ *       - Request description
+ *       - Request priority (1, 2, or 3) with validation
+ *       - Set completed to 0 (no)
+ *       - Store the task in the array
+ *    2. Mark Task as Completed:
+ *       - Request the id of the task
+ *       - If exists, set completed to 1
+ *       - Else, show an error message
+ *    3. List Tasks:
+ *       - Display id, description, priority ("Low", "Medium,"
+ *         "High") and status ("Yes" or "No")
+ *       - Organize display by priority (3 → 2 → 1)
+ *    4. Remove Task:
+ *       - Request the id of the task
+ *       - If exists, remove from array
+ *       - Else, show an error message
+ *    5. Exit: End the program
+ * 4. Continue program execution until the user selects Exit.
+ ***************************************************************/
