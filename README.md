@@ -1,4 +1,4 @@
-## Old C Programming Exercises for Programming Fundamentals
+## C and C++ Programming Exercises for Programming Fundamentals
 *Completed at SENAI*
 
 **Course:** Technical Course in Systems Development  
